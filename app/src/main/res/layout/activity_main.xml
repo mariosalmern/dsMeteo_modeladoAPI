@@ -8,15 +8,27 @@
     tools:context="com.example.monitor.comunicacion.MainActivity">
 
 
+    <TextView
+        android:id="@+id/textView_PasadoMañana"
+        android:layout_width="180dp"
+        android:layout_height="188dp"
+        android:text="Pasado Mañana"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/textView_Mañana"
+        android:layout_alignBottom="@+id/textView_Mañana"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="19dp" />
+
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="cargar"
         android:text="MOSTRAR"
+        android:layout_marginBottom="25dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="69dp" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/tvPagina"
@@ -27,19 +39,18 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="46dp"
-        android:text="VALORES METEREOLÓGICOS"
+        android:text="VALORES METEREOLÓGICOS HOY"
         android:textAllCaps="false"
         android:textColor="@android:color/black"
         android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView_Mañana"
-        android:layout_width="128dp"
-        android:layout_height="128dp"
+        android:layout_width="180dp"
+        android:layout_height="188dp"
         android:layout_above="@+id/button2"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="56dp"
-        android:layout_marginStart="33dp"
+        android:layout_marginBottom="66dp"
+        android:layout_toStartOf="@+id/button2"
         android:text="Mañana"
         android:textColor="@android:color/black"
         android:textSize="18sp" />
